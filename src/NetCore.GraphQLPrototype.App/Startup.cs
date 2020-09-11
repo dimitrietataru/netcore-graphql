@@ -21,6 +21,7 @@ namespace NetCore.GraphQLPrototype.App
             services.AddSingleton(configuration);
 
             services.AddDataDependencies();
+            services.AddGraphQLDependencies();
 
             services.AddControllers();
         }
@@ -35,6 +36,7 @@ namespace NetCore.GraphQLPrototype.App
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
+            app.UseGraphQL(env);
             app.UseEndpoints(routeBuilder => routeBuilder.MapControllers());
         }
     }

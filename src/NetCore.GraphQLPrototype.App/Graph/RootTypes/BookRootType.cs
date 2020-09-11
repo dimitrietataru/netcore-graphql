@@ -33,7 +33,7 @@ namespace NetCore.GraphQLPrototype.App.Graph.RootTypes
         {
             var args = new QueryArguments(new QueryArgument<IdGraphType> { Name = "isbn" });
 
-            FieldAsync<PublisherType>(
+            FieldAsync<BookType>(
                 name: "bookByIsbn",
                 arguments: args,
                 resolve: async context =>
@@ -48,7 +48,7 @@ namespace NetCore.GraphQLPrototype.App.Graph.RootTypes
         {
             var args = new QueryArguments(new QueryArgument<IdGraphType> { Name = "id" });
 
-            FieldAsync<PublisherType>(
+            FieldAsync<ListGraphType<BookType>>(
                 name: "booksByAuthorId",
                 arguments: args,
                 resolve: async context =>
@@ -63,7 +63,7 @@ namespace NetCore.GraphQLPrototype.App.Graph.RootTypes
         {
             var args = new QueryArguments(new QueryArgument<IdGraphType> { Name = "id" });
 
-            FieldAsync<PublisherType>(
+            FieldAsync<ListGraphType<BookType>>(
                 name: "booksByPublisherId",
                 arguments: args,
                 resolve: async context =>
