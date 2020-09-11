@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NetCore.GraphQLPrototype.App.Extensions;
 
 namespace NetCore.GraphQLPrototype.App
 {
@@ -18,6 +19,8 @@ namespace NetCore.GraphQLPrototype.App
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(configuration);
+
+            services.AddDataDependencies();
 
             services.AddControllers();
         }
