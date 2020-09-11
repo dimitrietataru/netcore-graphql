@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NetCore.GraphQLPrototype.Data\NetCore.GraphQLPrototype.Data.csproj" />
+  </ItemGroup>
+
 </Project>
