@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GraphQL" Version="3.0.0" />
+    <PackageReference Include="GraphQL.SystemTextJson" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NetCore.GraphQLPrototype.Data\NetCore.GraphQLPrototype.Data.csproj" />
   </ItemGroup>
 
