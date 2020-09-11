@@ -24,7 +24,7 @@ namespace NetCore.GraphQLPrototype.Data.Repositories
         public async Task<IEnumerable<Author>> GetAuthorsByPublisherIdAsync(int publisherId)
         {
             return await Task.FromResult(
-                SeedData.Authors.Where(author => author.Publishers.Any(id => id.Equals(publisherId))));
+                SeedData.Authors.Where(author => author.PublisherIds.Any(id => id.Equals(publisherId))));
         }
     }
 }

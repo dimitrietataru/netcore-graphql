@@ -14,7 +14,7 @@ namespace NetCore.GraphQLPrototype.Data.Repositories.Seed
                     {
                         Id = book.Author.Id,
                         Name = book.Author.Name,
-                        Publishers = new List<int>(book.Publisher.Id)
+                        PublisherIds = new List<int> { book.Publisher.Id}
                     })
                 .GroupBy(author => author.Id, (_, group) => group.FirstOrDefault())
                 .OfType<Author>()

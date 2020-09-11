@@ -8,6 +8,6 @@ namespace NetCore.GraphQLPrototype.Data.Entities
 
         public string Name { get; set; }
 
-        public IEnumerable<int> Publishers { get; set; } = new List<int>();
+        public IEnumerable<int> PublisherIds { get; set; } = new List<int>();
     }
 }
