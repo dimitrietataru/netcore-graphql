@@ -14,7 +14,7 @@ namespace NetCore.GraphQLPrototype.App.Extensions
                 configure: options =>
                 {
                     options.ComplexityConfiguration = new ComplexityConfiguration { MaxDepth = 15 };
-                    options.ExposeExceptions = env.IsDevelopment();
+                    options.ExposeExceptions = true;
                     options.FormatOutput = false;
                 });
 
@@ -22,7 +22,10 @@ namespace NetCore.GraphQLPrototype.App.Extensions
             {
                 app.UseGraphiql(
                     path: "/graphiql",
-                    configure: options => options.GraphQlEndpoint = "/graphql");
+                    configure: options =>
+                    {
+                        options.GraphQlEndpoint = "/graphql";
+                    });
             }
 
             return app;
