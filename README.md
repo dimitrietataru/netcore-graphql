@@ -501,3 +501,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
   }
 }
 ```
+
+## Credits
+* [graphql-dotnet](https://github.com/graphql-dotnet/graphql-dotnet)
+* [graphql-aspnetcore](https://github.com/JuergenGutsch/graphql-aspnetcore)
