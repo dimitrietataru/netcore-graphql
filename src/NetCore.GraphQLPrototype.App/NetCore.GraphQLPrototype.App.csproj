@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="GraphQL" Version="2.4.0" />
     <PackageReference Include="GraphQl.AspNetCore" Version="1.1.4" />
     <PackageReference Include="GraphQL.AspNetCore.Graphiql" Version="1.1.4" />
   </ItemGroup>
