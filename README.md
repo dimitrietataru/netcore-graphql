@@ -1,13 +1,11 @@
 # .NET Core - GraphQL
 
-
 ## Install
 ``` powershell
 PM> Install-Package GraphQL -Version 2.4.0
 PM> Install-Package GraphQl.AspNetCore -Version 1.1.4
 PM> Install-Package GraphQL.AspNetCore.Graphiql -Version 1.1.4
 ```
-
 
 ## Configure
 ``` csharp
@@ -56,7 +54,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     // ..
 }
 ```
-
 
 ## Usage
 ### **Get all authors**
