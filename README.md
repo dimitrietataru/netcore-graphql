@@ -1,4 +1,4 @@
-# .NET Core - GraphQL
+# .NET - GraphQL
 
 ## Install
 ``` powershell
